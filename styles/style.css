@@ -1,0 +1,53 @@
+.body {
+  background-color: whitesmoke;
+}
+
+.divider {
+  width: 100%;
+  height: 1;
+  margin: 16px 0;
+  background-color: #aaa;
+}
+
+.outer-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.inner-container {
+  text-align: center;
+}
+
+.photo {
+  width: 320px;
+  height: 320px;
+  border-radius: 32px;
+  box-shadow: 0 2px 16px #eaeaea;
+  margin-bottom: 32px;
+}
+
+.name {
+  font-size: 48px;
+  font-weight: bold;
+  color: #434343;
+  margin-bottom: 24px;
+}
+
+.roles {
+  color: #808080;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.activity {
+  font-size: 32px;
+  font-weight: 600;
+  color: #434343;
+}
