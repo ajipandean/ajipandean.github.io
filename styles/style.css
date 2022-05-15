@@ -1,56 +1,54 @@
 .body {
   background-color: whitesmoke;
+  overflow: hidden;
 }
 
-.divider {
-  width: 5%;
-  height: 8px;
-  margin: 32px auto;
-  background-color: #ff0000;
-  border-radius: 100px;
+.hidden {
+  display: none;
+}
+
+.radius {
+  border-radius: 16px;
 }
 
 .outer-container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   bottom: 0;
-}
-
-.inner-container {
-  text-align: center;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .photo {
-  width: 320px;
-  height: 320px;
   border-radius: 32px;
-  box-shadow: 0 2px 16px #eaeaea;
+  height: 320px;
   margin-bottom: 32px;
+  width: 320px;
 }
 
 .name {
+  color: #434343;
   font-size: 48px;
   font-weight: bold;
-  color: #434343;
   margin-bottom: 24px;
+}
+
+.nickname {
+  color: #ff0000;
+  text-decoration: underline;
 }
 
 .roles {
   color: #808080;
   font-size: 22px;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 .activity {
+  color: #434343;
   font-size: 32px;
   font-weight: 600;
-  color: #434343;
   margin-bottom: 40px;
 }
 
@@ -62,9 +60,9 @@
 
 .contact-list .contact-list-item {
   display: inline-block;
-  border-radius: 16px;
   border: 1px solid transparent;
-  transition: all 0.15s linear;
+  border-radius: 16px;
+  transition: all .15s linear;
 }
 .contact-list .contact-list-item:hover {
   background-color: #e0e0e0;
@@ -72,4 +70,15 @@
 }
 .contact-list .contact-list-item:active {
   background-color: #b0b0b0;
+}
+
+.nav .nav-item .nav-link {
+  color: #c0c0c0;
+  font-weight: 600;
+  margin: 8px 16px 8px 0;
+  padding: 0;
+}
+.nav .nav-item .nav-link.active {
+  background-color: transparent;
+  color: #434343;
 }
