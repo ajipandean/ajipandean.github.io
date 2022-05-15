@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,37 +11,81 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="packages/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body class="body">
   <div id="particlesjs"></div>
 
-  <div class="outer-container">
-    <div class="inner-container">
-      <img src="assets/images/photo.png" alt="Muhamad Aji Pandean Mertayasa" class="photo">
-      <h1 class="name">Muhamad Aji Pandean Mertayasa</h1>
-      <h4 class="roles">Programmer and long learner</h4>
-      <h3 class="activity">"Love exploring the internet"</h3>
+  <div class="outer-container container-fluid p-5 overflow-auto">
+    <div class="row gx-5 gy-5">
+      <div class="col">
+        <div class=" inner-container text-end sticky-md-top">
+          <img src="assets/images/photo.png" alt="Muhamad Aji Pandean Mertayasa" class="photo border">
+          <h1 class="name">
+            Muhamad <span class="nickname">Aji</span>
+            <br> Pandean Mertayasa
+          </h1>
+          <h4 class="roles">Just ordinary programmer <br> who loves exploring the clouds</h4>
+          <div class="contact-list">
+            <a href="https://wa.me/6289671859516" class="contact-list-item" rel="noreferrer noopener" target="_blank">
+              <img src="assets/icons/whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="https://instagram.com/ajipandean23" class="contact-list-item" rel="noreferrer noopener"
+              target="_blank">
+              <img src="assets/icons/instagram.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.linkedin.com/in/ajipandean/" class="contact-list-item" rel="noreferrer noopener"
+              target="_blank">
+              <img src="assets/icons/linkedin.png" alt="WhatsApp">
+            </a>
+            <a href="https://github.com/ajipandean" class="contact-list-item" rel="noreferrer noopener" target="_blank">
+              <img src="assets/icons/github.png" alt="WhatsApp">
+            </a>
+          </div>
+        </div>
+      </div>
 
-      <div class="contact-list">
-        <a href="https://wa.me/6289671859516" class="contact-list-item" rel="noreferrer noopener" target="_blank">
-          <img src="assets/icons/whatsapp.png" alt="WhatsApp">
-        </a>
-        <a href="https://instagram.com/ajipandean23" class="contact-list-item" rel="noreferrer noopener" target="_blank">
-          <img src="assets/icons/instagram.png" alt="WhatsApp">
-        </a>
-        <a href="https://www.linkedin.com/in/ajipandean/" class="contact-list-item" rel="noreferrer noopener" target="_blank">
-          <img src="assets/icons/linkedin.png" alt="WhatsApp">
-        </a>
-        <a href="https://github.com/ajipandean" class="contact-list-item" rel="noreferrer noopener" target="_blank">
-          <img src="assets/icons/github.png" alt="WhatsApp">
-        </a>
+      <div class="col">
+        <ul class="nav nav-pills mb-4" id="navigation" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link fs-3 active" class="pro-nav" data-bs-toggle="tab" data-bs-target="#pro-nav-panel"
+              type="button" role="tab" aria-controls="projects" aria-selected="false">
+              Projects
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link fs-3" class="edu-nav" data-bs-toggle="tab" data-bs-target="#edu-nav-panel" type="button"
+              role="tab" aria-controls="educations" aria-selected="false">
+              Educations
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link fs-3" class="ski-nav" data-bs-toggle="tab" data-bs-target="#ski-nav-panel" type="button"
+              role="tab" aria-controls="skills" aria-selected="false">
+              Skills
+            </a>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="nav-panels">
+          <div class="tab-pane fade show active" id="pro-nav-panel" role="tabpanel" aria-labelledby="pro-nav"></div>
+          <div class="tab-pane fade" id="edu-nav-panel" role="tabpanel" aria-labelledby="edu-nav">
+            List of educations
+          </div>
+          <div class="tab-pane fade" id="ski-nav-panel" role="tabpanel" aria-labelledby="ski-nav">
+            List of skills
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <script src="scripts/packages/particlesjs/particles.min.js"></script>
+  <script src="packages/particlesjs/particles.min.js"></script>
+  <script src="packages/bootstrap/js/bootstrap.min.js"></script>
   <script src="scripts/script.js"></script>
 </body>
+
 </html>
