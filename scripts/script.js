@@ -74,3 +74,38 @@ projects.forEach((project) => {
   projectItems.push(projectItem);
 });
 projectsPanel.innerHTML = projectItems;
+
+/* Educations */
+let educationsPanel = document.querySelector('#edu-nav-panel');
+let educationItems = [];
+let educations = [
+  {
+    duration: '2020 - 2021',
+    name: 'Google Bangkit Academy Program',
+    location: 'Indonesia',
+    path: 'Cloud Computing Learning Path',
+    description: 'Google Bangkit Program is a Google\'s program that collaborates with big tech companies in Indonesia such as Gojek, Traveloka, Tokopedia to educate college students in Indonesia to learn about the tech industry. Google Bangkit Program has 3 learning paths: Android, Cloud Computing and Machine Learning.',
+  },
+  {
+    duration: '2018 - Present',
+    name: 'STMIK Primakara',
+    location: 'Denpasar, Bali',
+    path: 'Bachelor in Informatics Engineering',
+    description: 'STMIK Primakara is a college that lets its students focus on leadership and entrepreneurship in technology, especially startups.',
+  },
+];
+
+educations.forEach((education) => {
+  let educationItem = `
+  <div class="card radius p-2 mb-2">
+    <div class="card-body">
+      <p class="text-muted mb-2">${education.duration}</p>
+      <h4 class="fs-4 fw-bold mb-2">${education.name}, ${education.location}</h4>
+      <p class="fs-5 mb-3">${education.path}</p>
+      <p class="lh-base">${education.description}</p>
+    </div>
+  </div>
+  `;
+  educationItems.push(educationItem);
+});
+educationsPanel.innerHTML = educationItems;
